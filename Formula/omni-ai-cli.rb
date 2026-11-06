@@ -14,8 +14,8 @@ class OmniAiCli < Formula
     inreplace libexec/"package.json", "0.0.0-development", version.to_s
     (bin/"ai").write <<~EOS
       #!/bin/bash
-      export PYTHONPATH="#{libexec}:${PYTHONPATH}"
-      exec "#{Formula["python@3.12"].opt_bin}/python3.12" -m omni_ai "$@"
+      export PYTHONPATH="#{libexec}${PYTHONPATH:+:$PYTHONPATH}"
+      exec "#{Formula["python@3.12"].opt_bin}/python3.12" -P -m omni_ai "$@"
     EOS
     bin.install_symlink bin/"ai" => "omni-ai"
     bin.install_symlink bin/"ai" => "smart-ai"
