@@ -1,8 +1,8 @@
 class OmniAiCli < Formula
   desc "One chat for Claude Code, Codex, Antigravity and OpenRouter with automatic routing"
   homepage "https://github.com/samuelrms/omni-ai-cli"
-  url "https://github.com/samuelrms/omni-ai-cli/archive/refs/tags/v1.24.6.tar.gz"
-  sha256 "927b6079ffcf0df093dcb41dbd20b59793ef8e5fafd1a93a365b6297087cdb9e"
+  url "https://github.com/samuelrms/omni-ai-cli/archive/refs/tags/v1.24.7.tar.gz"
+  sha256 "af21db7e9b23ec710305185108359014e2061e01c1e973a850045e35e27754bc"
   license "MIT"
 
   depends_on "python@3.12"
